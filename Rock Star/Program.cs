@@ -1,11 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Drawing;
-using System.IO;
-using System.Linq;
-using System.Windows;
-using System.Text;
-
 
 namespace Rock_Star
 {
@@ -13,35 +7,47 @@ namespace Rock_Star
     {
         public static MontarBanda MontarBanda { get; private set; }
 
+       
+
         static void Main(string[] args)
         {
-            
-            
+            VidaPersonagem vida = new VidaPersonagem();
+            Trivias trivias = new Trivias();
             Console.WriteLine("Digite Seu Nome: ");
             Console.ReadLine();
             Console.WriteLine();
 
-            
-            
-            
-            Console.WriteLine("Quais das Opções dejesa fazer: ");
-            
-            
+            vida.Dinheiro();
             
 
-            MontarBanda = new MontarBanda();
+            MontarBanda banda = new MontarBanda();
             Console.WriteLine("Nome da Sua Banda: ");
-            Console.ReadLine();
+            banda.Nome = Console.ReadLine();
             
+            Console.WriteLine("Quantos Integrantes?");
+            banda.quantidadeIntegrantes = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("O Que você deseja Fazer: " + trivias.trivia1);
+            string trivia1;
+            trivia1 = Console.ReadLine();
+
+            //string trivias[] = new string[10]
+            //trivias[r.Next(0, 10)] //
 
 
 
 
 
 
-            string Disco;
-            string Musica;
-            int[] discos = new int[20];
+
+
+
+
+
+
+
+
+
 
 
 

@@ -6,11 +6,32 @@ namespace Rock_Star
 {
     class VidaPersonagem
     {
-        public int pontos;
+        public int pontos = 100;
+        public int dinheiro = 100;
+        
 
-        public int Vida = 100;
-        public int Dinheiro = 100;
+        public void Dinheiro()
+        {
 
+            for (int i = 0; i < dinheiro; i++)
+            {
+                string cifrao = "$";
+                Console.Write(cifrao);
+                Console.WriteLine("\n");
+                dinheiro = dinheiro - 4;
+            }
+            
+
+            for (int i = 0; i<dinheiro; i++)
+             {
+                string cifrao = "$";
+                Console.Write(cifrao);
+             } 
+        }
+
+       
+        
+        
         
         public string fazerMusica;
         public string discoOuro;
@@ -29,14 +50,16 @@ namespace Rock_Star
         public string ficarNegativo;
         public string gravandoDisco;
         public string ensaiando;
-   
-       
+
+
+
+           
+
+
+
+
+
     }
 
-    List<string> Resposta = new List<string>();
-    void CheckRespostaO1_CheckedChanged(object sender, EventArgs e)
-    {
 
-    }
-    
 }

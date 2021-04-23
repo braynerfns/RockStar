@@ -9,5 +9,7 @@ namespace Rock_Star
     {
         public string Nome;
         public int quantidadeIntegrantes;
+
+        
     }
 }
